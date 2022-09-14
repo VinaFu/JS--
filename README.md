@@ -1,14 +1,21 @@
 # JS--
 
-一、An introduction
+Part One: The JavaScript language (14)
+Part Two: Browser: Document, Events, Interfaces (6)
+Part Three: Additional articles (7)
+每天看一小时 + 笔记一小时。看九月底能看多少。
 
+Part One: The JavaScript language (14)
+1. An introduction
     1.1
     1.2
     1.3
     
 
-二、
+2. 
 
-三、
+3. 
 
-四、
+4. 
+
+5. 
