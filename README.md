@@ -95,15 +95,34 @@ Sublime Text， Notepad++ (Windows).
                 alert( '1' + ‘2’ ); // "12"
                 alert(2 + 2 + '1' ); // "41"，不是 "221"
                 alert('1' + 2 + 2); // "122"，不是 "14" - 往后影响了
-                
-        + 一元运算符：对于非数字类型变为数字：alert( +true ); // 1
+        
+        二元 binary：正常的运算
+        + 一元运算符unary：对于非数字类型变为数字：alert( +true ); // 1
                                         alert( +"" );   // 0 - 类似Number（）
         ++：counter = counter +1 //只适合variable，不实用于常数，常数也不会变呀！
         --：counter = counter - 1 
         
         comma：let a = (1 + 2, 3 + 4); alert( a ); // 7（3 + 4 的结果）只返回最后的值
         
-    2.9 Comparisons
+    2.9 Comparisons 一般用大、小以及==来表示比较。 = 表示赋值
+    
+        数字："2" > "12" → true  //首元素比较
+        
+        string： alert( 'Z' > 'A' ); // true 字母顺序，越后越大
+                alert( 'Glow' > 'Glee' ); // true  一个位一个位比较
+       
+        different types：numbers，strings，boolean
+        let a = 0;
+        alert( Boolean(a) ); // false 真没东西
+
+        let b = "0";
+        alert( Boolean(b) ); // true 存在的东西是0
+        
+        === 严格相等
+        null 》= 0
+        undefined 和0没有关系
+        null == undefined // true
+        null === undefined //false
     
     2.10 
     
