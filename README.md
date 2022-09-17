@@ -88,7 +88,21 @@ Sublime Text， Notepad++ (Windows).
             
     2.8 Basic operators, maths ❕❕
         
-    
+        取余 %：alert( 5 % 2 ); // 1，5 除以 2 的余数
+        求幂 **：alert( 4 ** (1/2) ); // 2（1/2 次方与平方根相同)
+        
+        “”与+：  alert( '1' + 2 ); // "12"
+                alert( '1' + ‘2’ ); // "12"
+                alert(2 + 2 + '1' ); // "41"，不是 "221"
+                alert('1' + 2 + 2); // "122"，不是 "14" - 往后影响了
+                
+        + 一元运算符：对于非数字类型变为数字：alert( +true ); // 1
+                                        alert( +"" );   // 0 - 类似Number（）
+        ++：counter = counter +1 //只适合variable，不实用于常数，常数也不会变呀！
+        --：counter = counter - 1 
+        
+        comma：let a = (1 + 2, 3 + 4); alert( a ); // 7（3 + 4 的结果）只返回最后的值
+        
     2.9 Comparisons
     
     2.10 
