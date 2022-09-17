@@ -14,9 +14,11 @@ Part One: The JavaScript language (14)
         2）与html，css集成
         
     1.2 manuals： MDN
+    
     1.3 code editor： IDE：Integrated Development Environment
         常见的有：Visual Studio Code， WebStorm 轻便的有：
 Sublime Text， Notepad++ (Windows).
+
     1.4 developer console：can be opened with F12 for most browsers on Windows. Chrome for Mac needs Cmd+Opt+J, Safari: Cmd+Opt+C (need to enable first).
 
 2. JavaScript Fundamentals
@@ -35,9 +37,11 @@ Sublime Text， Notepad++ (Windows).
             在大多数的编辑器中，一行代码可以使用 Ctrl+/ 快捷键进行单行注释，诸如 Ctrl+Shift+/ 的快捷键可以进行多行注释（选择代码，然后按下快捷键）。对于 Mac 电脑，应使用 Cmd 而不是 Ctrl，使用 Option 而不是 Shift。
     
     2.3 The modern mode, "use strict" 出现在顶端
+    
         为了避免一些情况，使用use strict可以更加规范，例如分号不要省略。
     
     2.4 Variables 变量 和 常数
+    
         variables
         1）一般用let（var太老了）
              let message;
@@ -53,6 +57,7 @@ Sublime Text， Notepad++ (Windows).
         2）大写命名基本定住了，属于常数；变量不可大写
     
     2.5 Data types
+    
         1）number：有加减乘除等操作；有infinity以及NaN-计算错误，后者一出现都是错
         2）bigint：超大整数（2**53 -1 ）
         3）string：一般用“”或者‘’：直接引用。但是反引号`嵌入字符中`一般与大括号连用alert( `the result is ${1 + 2}` ); // the result is 3 
@@ -62,6 +67,7 @@ Sublime Text， Notepad++ (Windows).
         7)
     
     2.6 Interaction: alert, prompt, confirm
+    
         alert
         prompt：一般两部分：result = prompt(title, [default])，default为输入内容
             * let age = prompt('How old are you?', 100);
@@ -69,12 +75,15 @@ Sublime Text， Notepad++ (Windows).
         confirm：一般输入问题，弹出true或false的选项
     
     2.7 Type Conversions
+    
         String（）
+        
         number：Number（）；“6”/“2” = 3
             undefined = NaN
             null = 0
             true = 1； false = 0
             Number（“”） = 去掉空格、换行符 \n、制表符 \t 等纯数字，则为数字；若有其他符号，返回NaN。alert( Number("   123   ") ); // 123； alert( Number("123z") );      // NaN
+            
         boolean： 为“空”的值（如 0、空字符串、null、undefined 和 NaN）将变为 false。否则为1。
             
     2.8 Basic operators, maths ❕❕
